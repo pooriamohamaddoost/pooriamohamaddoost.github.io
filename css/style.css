@@ -1,0 +1,318 @@
+body {
+	font-size: 14px;
+	color: #333;
+	background-color: #fff;
+	letter-spacing: 1px;
+}
+
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #555;
+    content: " ";
+    width: 100px;
+    margin:auto;
+    margin-top: 30px;
+}
+
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slides-navigation {
+	z-index: 6;
+}
+
+
+.slides-navigation .prev,
+.slides-navigation .next {
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+	left: 20px;
+	background-image: url(../img/icons/prev.png);
+}
+
+.slides-navigation a.next {
+	right: 20px;
+	background-image: url(../img/icons/next.png);
+}
+
+.titleMessage {
+	position: absolute;
+	width: 100%;
+	height:250px;
+	top: 50%;
+	z-index: 4;
+	text-align: center;
+	margin-top: -125px;
+
+}
+
+.titleMessage .heading p {
+	color: #fff;
+	text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+	font-weight: 100;
+	letter-spacing: 7px;
+
+}
+
+.titleMessage .heading .main {
+	font-size: 55px;
+}
+
+.titleMessage .heading .sub {
+	font-size: 28px;
+}
+
+.section {
+	padding: 100px 0;
+}
+
+.aboutImage {
+	max-width: 100%;
+}
+
+/*_____________________color____________________*/
+.skillsSection,
+.contactSection {
+	background-color: #1e272e;
+	color:#fff;
+
+}
+
+.skill {
+	text-align: center;
+	margin-left: 10px;
+}
+
+
+.skill h4 {
+margin-top: 20px;
+}
+
+.chart {
+	position: relative;
+	width: 152px;
+	height: 152px;
+	display: inline-block;
+	text-align: center;
+}
+
+.chart canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.chart .percent {
+	color: #fff;
+	line-height: 152px;
+	display: inline-block;
+	font-size: 35px;
+}
+
+.chart .percent:after {
+	content: '%';
+}
+
+.squareItem {
+	margin-top: 30px;
+	position: relative;
+}
+
+.squareInnerContainer {
+	position: relative;
+	padding: 50px 15px 35px;
+	text-align: center;
+	border: 2px solid #444;
+	border-top: none;
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after {
+	content: '';
+	position: absolute;
+    top: 0px;
+    width: 30%;
+    border-bottom: 2px solid #444;
+}
+
+
+.squareInnerContainer:before {
+	right: 0px;
+}
+
+.squareInnerContainer:after {
+	left: 0px;
+}
+
+/*________________color_____________________-*/
+
+.squareContent h4 {
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0;
+}
+
+
+.squareIcon {
+	position: absolute;
+	left: 50%;
+	top: -30px;
+	width: 40px;
+	height: 60px;
+	font-size: 45px;
+	margin-left: -10%;
+	color: #444;
+}
+
+.contactButton {
+	color: #fff;
+	padding: 15px 20px;
+	display: inline-block;
+	margin-top: 20px;
+	border: 1px solid #fff;
+	border-radius: 2px;
+}
+
+.contactButton:hover {
+	text-decoration: none;
+	color: #1e272e;
+	background-color: #fff;
+}
+
+.counter {
+	font-size: 56px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	color: #1e272e ;
+
+}
+
+.subHeading {
+	padding-top: 30PX;
+	font-size: 1.3em;
+}
+
+.rep {
+	font-size: 1.2em;
+	padding: 7px;
+}
+
+.aboutp {
+	padding-top: 30PX;
+	font-size: 1.3em;
+	margin-bottom: -15px;
+}
+
+.abouth {
+	padding-top: 15PX;
+
+}
+
+.copyrightSection {
+	background-color: #2C3A47;
+	color: #fff;
+	padding: 30px 5px;
+}
+
+.copyrightSection p {
+	margin: 0;
+}
+
+#navigation {
+	background-color: #2C3A47;
+	padding: 20px 10px;
+	z-index: 100;
+	width: 100%;
+}
+
+#navigation li {
+	padding: 0 10px;
+}
+
+#navigation li a {
+	color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+	color: #fff;
+}
+
+.navbar-toggler-icon {
+	background: url(../img/icons/menu.png);
+	background-size: 100%;
+}
+
+.fixedNav #navigation {
+	position: fixed;
+	top: 0;
+}
+
+.loader {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+}
+
+.loader .inner {
+	width: 100%;
+	height: 100%;
+	background: url(../img/loader.gif) center center no-repeat;
+}
+
+
+.work h2 {
+
+	font-size: 40px;
+   
+}
+
+.proj {
+	margin-bottom: 30px;
+}
+
+.proimg {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000
+
+}
+.proimg img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.proimg img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
